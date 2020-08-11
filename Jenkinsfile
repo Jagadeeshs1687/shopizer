@@ -10,7 +10,7 @@
     stage ('Archive') {
       steps{
         echo "Archiving Project"
-        archiveArtifacts artifacts: '*/.war', followSymlinks: false
+        archiveArtifacts artifacts: '**/*.war', followSymlinks: false
       }
     }
    stage('Build images') {
